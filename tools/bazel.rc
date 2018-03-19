@@ -1,0 +1,5 @@
+build --action_env=LD_LIBRARY_PATH
+build --action_env=PATH
+build --test_env=LD_LIBRARY_PATH
+build --test_env=PATH
+
