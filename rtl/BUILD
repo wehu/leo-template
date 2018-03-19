@@ -12,6 +12,7 @@ block(
 
 verilator_library(
     name = "dut",
+    top_module_file = ":dut.v",
     deps = [":dut_v"],
 )
 

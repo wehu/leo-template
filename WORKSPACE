@@ -2,8 +2,8 @@ workspace(name = "leo_template")
 
 git_repository(
     name = "lionrock",
-    remote = "http://github.com/wehu/lionrock.git",
-    commit = "54f5434097edd04c022c07a16bd52ee0da4e530b",
+    remote = "https://github.com/wehu/lionrock.git",
+    commit = "e9e61a7022f0bc6acc5f605d89b9342216e6a8d3",
 )
 
 new_http_archive(
@@ -27,3 +27,9 @@ new_http_archive(
     build_file = "@lionrock//:uvm-systemc.BUILD",
 )
 
+new_http_archive(
+    name = "scv",
+    urls = ["https://github.com/wehu/lionrock/releases/download/v0.1/scv-2.0.1.tar.gz"],
+    sha256 = "bd245b343da8e96e26c0b4d481640ee37701ce10d03e1b1b55f77e7bd9b5b765",
+    build_file = "@lionrock//:scv.BUILD",
+)

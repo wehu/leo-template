@@ -8,7 +8,9 @@ cc_binary(
             "//rtl:dut.h",
             "//rtl:verilated.o",
            ],
-    deps = ["@verilator//:verilator", "@uvm_systemc//:uvm_systemc"],
+    deps = ["@verilator//:verilator",
+            "@uvm_systemc//:uvm_systemc",
+            "@scv//:scv"],
     visibility = ["//visibility:public"],
 )
 

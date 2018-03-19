@@ -27,8 +27,8 @@
 int sc_main(int, char*[]) 
 {  
   // instantiate the DUT
-  Vdut* my_dut = new Vdut("my_dut");
-  testbench* tb = new testbench("tb");
+  Vdut* dut = new Vdut("dut");
+  new testbench("tb");
 
   //uvm_config_db_options::turn_on_tracing();
 
@@ -38,8 +38,8 @@ int sc_main(int, char*[])
   uvm::uvm_config_db<vip_if*>::set(0, "tb.agent1.*", "vif", dut_if_in);
   uvm::uvm_config_db<vip_if*>::set(0, "tb.agent2.*", "vif", dut_if_out);
 
-  my_dut->in(dut_if_in->sig_data);
-  my_dut->out(dut_if_out->sig_data);
+  dut->in(dut_if_in->sig_data);
+  dut->out(dut_if_out->sig_data);
 
   uvm::run_test();
 
