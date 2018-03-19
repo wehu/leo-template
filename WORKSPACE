@@ -6,11 +6,6 @@ git_repository(
     commit = "54f5434097edd04c022c07a16bd52ee0da4e530b",
 )
 
-local_repository(
-    name = "foo",
-    path = "../foo",
-)
-
 new_http_archive(
     name = "verilator",
     urls = ["https://github.com/wehu/lionrock/releases/download/v0.1/verilator-2018-03-18.tar.gz"],
