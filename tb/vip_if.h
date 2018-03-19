@@ -30,7 +30,7 @@ using namespace uvm;
 class vip_if
 {
  public:
-  sc_core::sc_signal<unsigned int> sig_data;
+  sc_core::sc_signal<uint32_t> sig_data;
 
   vip_if() {}
 };
