@@ -1,4 +1,4 @@
-workspace(name = "leo_demo")
+workspace(name = "leo_template")
 
 git_repository(
     name = "lionrock",
