@@ -21,7 +21,7 @@
 #include <uvm>
 
 #include "testbench.h"
-#include "src/rtl/dut.h"
+#include "rtl/dut.h"
 #include "vip_if.h"
 
 int sc_main(int, char*[]) 
